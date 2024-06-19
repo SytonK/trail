@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://cgrlmr0ccueo8"]
+
+[ext_resource type="Script" path="res://trail/curser_trail.gd" id="1_po8ln"]
+
+[sub_resource type="Curve" id="Curve_hsmt5"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.994737, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="Gradient" id="Gradient_6p0qf"]
+colors = PackedColorArray(0.882353, 0.27451, 0.156863, 1, 0.27451, 0.607843, 0.882353, 1)
+
+[node name="CurserTrail" type="Line2D"]
+width_curve = SubResource("Curve_hsmt5")
+gradient = SubResource("Gradient_6p0qf")
+script = ExtResource("1_po8ln")
+max_length = 10
