@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://b0veu53vap6lm"]
 
-[ext_resource type="PackedScene" uid="uid://bdnptkh4016io" path="res://example/icon.tscn" id="1_r1hhm"]
+[ext_resource type="PackedScene" uid="uid://bdnptkh4016io" path="res://trail/example/icon.tscn" id="1_r1hhm"]
 [ext_resource type="Script" path="res://trail/curser trail/curser_trail.gd" id="3_xhq0p"]
 
 [sub_resource type="Curve" id="Curve_wktnq"]

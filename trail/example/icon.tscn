@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://bdnptkh4016io"]
 
 [ext_resource type="Texture2D" uid="uid://cvi2o7r5etrjd" path="res://icon.svg" id="1_mvgxx"]
-[ext_resource type="Script" path="res://example/Icon.gd" id="2_fep0d"]
+[ext_resource type="Script" path="res://trail/example/Icon.gd" id="2_fep0d"]
 [ext_resource type="Script" path="res://trail/trail.gd" id="3_507kc"]
 
 [sub_resource type="Curve" id="Curve_yvoap"]
