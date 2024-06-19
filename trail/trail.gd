@@ -1,4 +1,4 @@
-class_name CurserTrail
+class_name Trail
 extends Line2D
 
 
@@ -6,7 +6,7 @@ extends Line2D
 var queue : Array
  
 func _process(_delta: float) -> void:
-	var pos = get_global_mouse_position()
+	var pos = _get_position()
 	
 	queue.push_front(pos)
 	
@@ -17,3 +17,6 @@ func _process(_delta: float) -> void:
 	
 	for point in queue:
 		add_point(point)
+
+func _get_position() -> Vector2:
+	return owner.position

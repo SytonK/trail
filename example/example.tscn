@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://b0veu53vap6lm"]
+
+[ext_resource type="PackedScene" uid="uid://bdnptkh4016io" path="res://example/icon.tscn" id="1_r1hhm"]
+[ext_resource type="Script" path="res://trail/curser trail/curser_trail.gd" id="3_xhq0p"]
+
+[sub_resource type="Curve" id="Curve_wktnq"]
+_data = [Vector2(0, 0.604396), 0.0, 2.4359, 0, 0, Vector2(0.315789, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="Gradient" id="Gradient_t1lsq"]
+
+[node name="Example" type="Node2D"]
+
+[node name="Icon" parent="." instance=ExtResource("1_r1hhm")]
+
+[node name="CurserTrail" type="Line2D" parent="."]
+width_curve = SubResource("Curve_wktnq")
+gradient = SubResource("Gradient_t1lsq")
+script = ExtResource("3_xhq0p")
+max_length = 10
