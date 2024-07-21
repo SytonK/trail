@@ -18,3 +18,4 @@ width_curve = SubResource("Curve_wktnq")
 gradient = SubResource("Gradient_t1lsq")
 script = ExtResource("3_xhq0p")
 max_length = 10
+frequency = 0.1
